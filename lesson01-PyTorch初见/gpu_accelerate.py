@@ -22,8 +22,3 @@ c = torch.matmul(a, b)
 t2 = time.time()
 print(a.device, t2 - t0, c.norm(2))
 
-t0 = time.time()
-c = torch.matmul(a, b)
-t2 = time.time()
-print(a.device, t2 - t0, c.norm(2))
-

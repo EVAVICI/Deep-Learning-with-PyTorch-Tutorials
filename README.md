@@ -49,7 +49,8 @@ pip install numpy matplotlib pillow pandas
 
 
 # 计划
-好多之前学了，但是不全，主要自己模仿代码，代码不熟，理论基本都了解，也会
+好多之前学了，但是不全，主要自己模仿代码，代码不熟，理论基本都了解，也会,这个讲的也没有很好;
+实践过程中最好看pytorch官方的说明tutorial/docs
 
 ## 2023.2.14
 
