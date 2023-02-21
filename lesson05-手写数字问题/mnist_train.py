@@ -6,7 +6,7 @@ from    torch import optim
 import  torchvision
 from    matplotlib import pyplot as plt
 
-from    utils import plot_image, plot_curve, one_hot
+from    utils import plot_image, plot_curve, one_hot #数据预处理 画图放到util里
 
 
 

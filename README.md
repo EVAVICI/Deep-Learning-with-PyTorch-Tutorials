@@ -49,10 +49,19 @@ pip install numpy matplotlib pillow pandas
 
 
 # 计划
-好多之前学了，但是不全，主要自己模仿代码，代码不熟，理论基本都了解，也会,这个讲的也没有很好;
+好多之前学了，但是不全，主要自己挑着模仿代码，代码不熟，理论基本都了解，也会,这个讲的也没有很好;
 实践过程中最好看pytorch官方的说明tutorial/docs
 
-## 2023.2.14
+![image-20230217161244497](/home/halcyon/snap/typora/76/.config/Typora/typora-user-images/image-20230217161244497.png)
 
-- [ ] lesson1-10
+- [x] 回归问题 lesson3-5 2023.2.14
+- [ ] pytorch基础 lesson6-14 
+- [ ] SGD随机梯度下降 lesson15-22
+- [ ] 神经网络 lesson24-29
+- [ ] 测试与可视化 lesson30
+- [ ] 过拟合lesson31-35
+- [ ] CNN 37-45
+- [ ] RNN 46-53
+- [ ] auto-encoder 54-55
+- [ ] GAN 56-63
 
