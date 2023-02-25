@@ -55,13 +55,14 @@ pip install numpy matplotlib pillow pandas
 ![image-20230217161244497](/home/halcyon/snap/typora/76/.config/Typora/typora-user-images/image-20230217161244497.png)
 
 - [x] 回归问题 lesson3-5 2023.2.14
-- [ ] pytorch基础 lesson6-14 
-- [ ] SGD随机梯度下降 lesson15-22
+- [ ] pytorch基础 lesson6-14 2023.2.25
+- [ ] SGD随机梯度下降 lesson15-22 2023.2.21
 - [ ] 神经网络 lesson24-29
 - [ ] 测试与可视化 lesson30
 - [ ] 过拟合lesson31-35
 - [ ] CNN 37-45
 - [ ] RNN 46-53
 - [ ] auto-encoder 54-55
-- [ ] GAN 56-63
+- [ ] GAN 56-56
+- [ ] 拓展 GCN 58 63
 
