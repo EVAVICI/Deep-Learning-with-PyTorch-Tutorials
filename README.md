@@ -72,9 +72,9 @@ pip install numpy matplotlib pillow pandas
 
 - [x] 过拟合lesson31-35
 
-- [ ] CNN 37-45
+- [x] CNN 37-45
 
-- [ ] RNN 46-53
+- [x] RNN 46-53 cNN rnn都跳了 没仔细看 因为在 nlp-tutorial里面看过了
 
 - [ ] auto-encoder 54-55
 
