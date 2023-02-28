@@ -8,7 +8,7 @@ from visdom import Visdom
 
 batch_size=200
 learning_rate=0.01
-epochs=10
+epochs=5
 
 train_loader = torch.utils.data.DataLoader(
     datasets.MNIST('../data', train=True, download=True,
@@ -45,7 +45,7 @@ class MLP(nn.Module):
 
         return x
 
-device = torch.device('cuda:0')
+device ="cpu"#torch.device('cuda:0')
 net = MLP().to(device)
 optimizer = optim.SGD(net.parameters(), lr=learning_rate)
 criteon = nn.CrossEntropyLoss().to(device)
@@ -61,7 +61,7 @@ for epoch in range(epochs):
 
     for batch_idx, (data, target) in enumerate(train_loader):
         data = data.view(-1, 28*28)
-        data, target = data.to(device), target.cuda()
+        data, target = data.to(device), target.to(device)
 
         logits = net(data)
         loss = criteon(logits, target)
@@ -84,7 +84,7 @@ for epoch in range(epochs):
     correct = 0
     for data, target in test_loader:
         data = data.view(-1, 28 * 28)
-        data, target = data.to(device), target.cuda()
+        data, target = data.to(device), target.to(device)
         logits = net(data)
         test_loss += criteon(logits, target).item()
 

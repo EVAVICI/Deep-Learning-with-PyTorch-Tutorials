@@ -52,23 +52,25 @@ pip install numpy matplotlib pillow pandas
 好多之前学了，但是不全，主要自己挑着模仿代码，代码不熟，理论基本都了解，也会,这个讲的也没有很好;
 实践过程中最好看pytorch官方的说明tutorial/docs
 
-![image-20230217161244497](/home/halcyon/snap/typora/76/.config/Typora/typora-user-images/image-20230217161244497.png)
+
 
 - [x] 回归问题 lesson3-5 2023.2.14
 
-- [ ] pytorch基础 lesson6-14 
+- [x] pytorch基础 lesson6-14 
 
   2023.2.25 6-8 1h 
 
-  2023.2.26 9-12
+  2023.2.26 9 0.5h; 6-9整理笔记1h 10-13 下午2.5h
 
-- [ ] SGD随机梯度下降 lesson15-22 2023.2.21
+- [x] SGD随机梯度下降 lesson16-22 
 
-- [ ] 神经网络 lesson24-29
+  2023.2.27 13  14一边打一边记笔记; 推导部分跳着看 22太老了 都不对了
 
-- [ ] 测试与可视化 lesson30
+- [x] 神经网络 lesson24-29
 
-- [ ] 过拟合lesson31-35
+- [x] 测试与可视化 lesson30
+
+- [x] 过拟合lesson31-35
 
 - [ ] CNN 37-45
 
@@ -80,3 +82,4 @@ pip install numpy matplotlib pillow pandas
 
 - [ ] 拓展 GCN 58 63
 
+**attention,transformer那块看nlp-tutorial!!  这下基本上所有基础模型都练习过,后面用到再细扒!!!!**
