@@ -74,8 +74,8 @@ def data_generator():
             dataset.append(point)
         dataset = np.array(dataset, dtype='float32')
         dataset /= 1.414  # stdev
-        yield dataset
-
+        yield dataset #https://blog.csdn.net/qq_41554005/article/details/119940983
+ 
     # for i in range(100000//25):
     #     for x in range(-2, 3):
     #         for y in range(-2, 3):
@@ -175,7 +175,7 @@ def main():
 
     G = Generator().cuda()
     D = Discriminator().cuda()
-    G.apply(weights_init)
+    G.apply(weights_init) #对G 用weights_init这个函数!!!
     D.apply(weights_init)
 
     optim_G = optim.Adam(G.parameters(), lr=1e-3, betas=(0.5, 0.9))
@@ -238,10 +238,6 @@ def main():
             generate_image(D, G, xr, epoch)
 
             print(loss_D.item(), loss_G.item())
-
-
-
-
 
 
 if __name__ == '__main__':

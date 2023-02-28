@@ -1,18 +1,10 @@
 import  torch
 from    torch import nn
 
-
-
-
-
 class VAE(nn.Module):
-
-
 
     def __init__(self):
         super(VAE, self).__init__()
-
-
         # [b, 784] => [b, 20]
         # u: [b, 10]
         # sigma: [b, 10]
@@ -24,7 +16,7 @@ class VAE(nn.Module):
             nn.Linear(64, 20),
             nn.ReLU()
         )
-        # [b, 20] => [b, 784]
+        # [b, 10] => [b, 784]
         self.decoder = nn.Sequential(
             nn.Linear(10, 64),
             nn.ReLU(),
@@ -33,12 +25,10 @@ class VAE(nn.Module):
             nn.Linear(256, 784),
             nn.Sigmoid()
         )
-
         self.criteon = nn.MSELoss()
 
     def forward(self, x):
-        """
-
+        """cla
         :param x: [b, 1, 28, 28]
         :return:
         """
@@ -53,11 +43,12 @@ class VAE(nn.Module):
         # reparametrize trick, epison~N(0, 1)
         h = mu + sigma * torch.randn_like(sigma)
 
-        # decoder
+        # decoder x_hat就是预计值
         x_hat = self.decoder(h)
-        # reshape
+        # reshape view到指定维度
         x_hat = x_hat.view(batchsz, 1, 28, 28)
-
+ 
+ # kld是啥东西??
         kld = 0.5 * torch.sum(
             torch.pow(mu, 2) +
             torch.pow(sigma, 2) -

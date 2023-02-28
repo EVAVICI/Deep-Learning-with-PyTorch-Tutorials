@@ -6,6 +6,8 @@ from    torch.nn import functional as F
 from    matplotlib import pyplot as plt
 import  random
 
+#     # 和gan.py一模一样
+
 h_dim = 400
 batchsz = 512
 viz = visdom.Visdom()
@@ -246,3 +248,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

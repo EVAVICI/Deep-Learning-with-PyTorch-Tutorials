@@ -1,19 +1,9 @@
 import  torch
 from    torch import nn
-
-
-
-
-
 class AE(nn.Module):
-
-
-
-    def __init__(self):
+   def __init__(self):
         super(AE, self).__init__()
-
-
-        # [b, 784] => [b, 20]
+       # [b, 784] => [b, 20]
         self.encoder = nn.Sequential(
             nn.Linear(784, 256),
             nn.ReLU(),
@@ -32,10 +22,8 @@ class AE(nn.Module):
             nn.Sigmoid()
         )
 
-
     def forward(self, x):
         """
-
         :param x: [b, 1, 28, 28]
         :return:
         """
@@ -48,5 +36,4 @@ class AE(nn.Module):
         x = self.decoder(x)
         # reshape
         x = x.view(batchsz, 1, 28, 28)
-
         return x, None

@@ -61,11 +61,5 @@ def main():
             x_hat, kld = model(x)
         viz.images(x, nrow=8, win='x', opts=dict(title='x'))
         viz.images(x_hat, nrow=8, win='x_hat', opts=dict(title='x_hat'))
-
-
-
-
-
-
 if __name__ == '__main__':
     main()

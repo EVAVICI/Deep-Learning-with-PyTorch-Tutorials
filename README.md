@@ -80,6 +80,6 @@ pip install numpy matplotlib pillow pandas
 
 - [ ] GAN 56-56
 
-- [ ] 拓展 GCN 58 63
+- [ ] 拓展 GCN 58  迁移学习transfer learning 63(63暂时不看用不上!!)
 
 **attention,transformer那块看nlp-tutorial!!  这下基本上所有基础模型都练习过,后面用到再细扒!!!!**
